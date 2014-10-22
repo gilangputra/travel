@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>travel | detail</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="lib/js/jQuery.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/amazingslider.js"></script>
+    <script type="text/javascript" src="lib/js/initslider-1.js"></script>
+    <script type="text/javascript" src="lib/js/fixto.min.js"></script>
+    <script type="text/javascript" src="lib/js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="lib/js/script.js"></script>
+</head>
+<body class="body-bg body-set">
+    <div class="container">
+
+		<!--HEADER-->
+        <header id="site-header" class="site-header row header-bg site-component">
+            <div class="col-xs-4 col-sm-6 left-inner">
+                <a class="site-logo" href="#"><img src="lib/img/logo.png"></a>
+            </div>
+
+            <div class="col-xs-8 col-sm-6 right-inner">
+                <nav class="languages-nav small-nav-set hidden-xs">
+                    <ul>
+                        <li><a href="#">de</a></li>
+                        <li><a href="#">en</a></li>
+                        <li><a href="#">it</a></li>
+                    </ul>
+                </nav>
+                <div class="contact hidden-xs pull-right">
+                    <img src="lib/img/profile.png">
+                    <div class="text-info">
+                        <h4 class="subline-set">buchungshotline</h4>
+                        <h4 class="subline-set" href="tel:">0049 555 555-55</h4>
+                        <h4>0049 555 555-55</h4>
+                        <h4>max. € 0,073/Min. A1-Festnetztarif</h4>
+                    </div>
+                </div>
+                <nav class="container-btn-mobile visible-xs pull-right">
+                    <a id="m-home" class="btn btn-icon btn-default" href="#"><i class="icon icon-home"></i></a>
+                    <a data-id="menu-mobile" class="btn btn-icon btn-default mobile-toggle" href="javascript:;" ><i class="icon icon-menu"></i></a>
+                    <a data-id="filter-mobile" class="btn btn-icon btn-default search mobile-toggle" href="javascript:;"><i class="icon icon-search"></i></a>
+                </nav>
+            </div>
+        </header>
+
+		<!--MENU-->
+        <nav id="site-menu" class="site-menu row nav-set">
+            <div class="col-xs-12 menu-inner menu-bg  site-component hidden-xs">
+                <ul>
+                    <li><a class="btn-icon btn-white home" href="index.html"><i class="icon icon-home"></i></a></li>
+                    <li><a href="detail.html">Detail</a></li>
+                    <li><a href="contact.html">Buchung</a></li>
+                    <li><a href="landing.html">landing</a></li>
+                    <li><a href="info.html">info</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!--MENU MOBILE-->
+            <div id="menu-mobile-content" class="col-xs-12 menu-inner-mobile mobile-toggle-content menu-bg site-component">
+                <div class="menu-mobile pull-left">
+                    <ul>
+                        <li class="home"><a href="?home">Home</a></li>
+                        <li><a href="#">reisearten</a></li>
+                        <li><a href="#">reiseziele</a></li>
+                        <li><a href="#">profil</a></li>
+                        <li><a href="#">kontakt</a></li>
+                        <li><a href="#">ueber uns</a></li>
+                        <li><a href="#">reisebueros</a></li>
+                        <li><a href="#">impressum</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <nav class="languages-nav-mobile pull-right">
+                    <ul>
+                        <li><a class="btn-icon btn-white" href="#">de</a></li>
+                        <li><a class="btn-icon btn-white" href="#">en</a></li>
+                        <li><a class="btn-icon btn-white" href="#">it</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </nav>
+
+		<!--FILTER DESKTOP-->
+        <nav id="site-filter" class="site-filter nav-set row ">
+            <div class="col-xs-12 filter-inner filter-bg site-component small-nav-set hidden-xs">
+
+                <form  class="priod pull-left" method="s" name="s">
+                    <input class="search pull-left" type="text" placeholder="reisezeitraum">
+                    <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                </form>
+                <div class="container-select pull-left">
+                    <nav class="dropdown item-filter pull-left">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">Reisezeotarium</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">Reisezeotarium 0</span></li>
+                            <li><span class="text">Reisezeotarium 1</span></li>
+                            <li><span class="text">Reisezeotarium 2</span></li>
+                            <li><span class="text">Reisezeotarium 3</span></li>
+                        </ul>
+                    </nav>
+                    <nav class="dropdown item-filter pull-left">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">destination</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">destination 0</span></li>
+                            <li><span class="text">destination 1</span></li>
+                            <li><span class="text">destination 2</span></li>
+                            <li><span class="text">destination 3</span></li>
+                        </ul>
+                    </nav>
+                    <nav class="dropdown item-filter pull-left">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">sortieren nach</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">sortieren nach 0</span></li>
+                            <li><span class="text">sortieren nach 1</span></li>
+                            <li><span class="text">sortieren nach2</span></li>
+                            <li><span class="text">sortieren nach 3</span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <span class="container-suchen pull-right"><a class="btn btn-medium btn-default suchen" href="#">suchen</a></span>
+            </div>
+            <div class="clearfix"></div>
+
+            <!--FILTER MOBILE-->
+            <div id="filter-mobile-content" class="col-xs-12 filter-inner-mobile mobile-toggle-content small-nav-set filter-bg site-component">
+                <form class="priod" method="s" name="s">
+                    <input class="search pull-left" type="text" placeholder="reisezeitraum">
+                    <button class="btn-search" type="button"><i class="icon icon-calendar"></i></button>
+                    <div class="clearfix"></div>
+                </form>
+                <nav class="dropdown item-filter pull-left">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="filter-option pull-left" data-bind="label">test</span> <span class="icon icon-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                        <li><span class="text">test1</span></li>
+                        <li><span class="text">test2</span></li>
+                        <li><span class="text">test3</span></li>
+                        <li><span class="text">test4</span></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown item-filter pull-left">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="filter-option pull-left" data-bind="label">test</span> <span class="icon icon-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                        <li><span class="text">test1</span></li>
+                        <li><span class="text">test2</span></li>
+                        <li><span class="text">test3</span></li>
+                        <li><span class="text">test4</span></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown item-filter pull-left">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="filter-option pull-left" data-bind="label">test</span> <span class="icon icon-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                        <li><span class="text">test1</span></li>
+                        <li><span class="text">test2</span></li>
+                        <li><span class="text">test3</span></li>
+                        <li><span class="text">test4</span></li>
+                    </ul>
+                </nav>
+                <span class="container-suchen"><a class="btn btn-medium btn-default suchen" href="#">suchen</a></span>
+            </div>
+        </nav>
+
+
+		<!--MAIN-->
+		<div id="site-main" class="site-main row site-component">
+
+            <!--ITEM DETAIL-->
+            <div class="item-container item-detail content-bg">
+                <!--ITEM IMAGE SLIDE-->
+                <div class="item-image item-image-slide col-xs-12 col-sm-8">
+                    <div id="amazingslider-1" class="amazingslider" style="display:block;position:relative;">
+                         <ul class="amazingslider-slides amazingslider-preview" style="display:none;">
+                            <!-- IMAGE 580x280 -->
+                            <li><img src="media/slide/1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy."/></li>
+                            <li><img src="media/slide/2.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/></li>
+                            <li><img src="media/slide/3.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/></li>
+                            <li><img src="media/slide/4.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/></li>
+                            <li><img src="media/slide/5.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/></li>
+                            <li><img src="media/slide/6.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/></li>
+                            <li><img src="media/slide/7.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/></li>
+                        </ul>
+                        <ul class="amazingslider-thumbnails" style="display:none;">
+                            <!-- IMAGE 142x90 -->
+                            <li><img src="media/slide/1-tn.jpg" /></li>
+                            <li><img src="media/slide/2-tn.jpg" /></li>
+                            <li><img src="media/slide/3-tn.jpg" /></li>
+                            <li><img src="media/slide/4-tn.jpg" /></li>
+                            <li><img src="media/slide/5-tn.jpg" /></li>
+                            <li><img src="media/slide/6-tn.jpg" /></li>
+                            <li><img src="media/slide/7-tn.jpg" /></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--ITEM CONTENT DETAIL-->
+                <div class="item-content entry-content col-xs-12 col-sm-4">
+                    <div class="item-head">
+                        <h1 class="headline headline-set">BERGHOTEL der königsleitner 4</h1>
+                        <div class="star-rating">
+                            <span class="star star-full"></span>
+                            <span class="star star-full"></span>
+                            <span class="star star-full"></span>
+                            <span class="star star-half"></span>
+                        </div>
+                    </div>
+                    <h2 class="subline subline-set">Königsleiten | Salzburgerland</h2>
+                    <p>von 13.04.2014 - 20.09.2014</p>
+                    <h2 class="subline subline-set">ihre vorteile:</h2>
+                    <ul>
+                        <li>5 Gang á la Carte Menü als Diner</li>
+                        <li>Bergfrühstück mit gefülltem Wanderrucksack</li>
+                        <li>Kostenlose Nutzung der Bergbahn<br>u.v.m.</li>
+                    </ul>
+                    <p>Nur noch buchbar bis 30.06.2014</p>
+                    <div class="item-foot">
+                        <div class="item-price pull-left">
+                            <p>3 Nächte mit HP ab</p>
+                            <h1 class="price price-set">
+                                399,-
+                            </h1>
+                        </div>
+                        <div class="item-more pull-right">
+                            <a href="" class="btn btn-square btn-small btn-ersparnis">
+                                <span class="inner">
+                                    <span class="title">ersparnis</span>
+                                    <span class="percentage">34%</span>
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-default more">jetzt buchen</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+
+
+            <!--PAGE DETAIL-->
+            <div class="page-detail">
+
+                <!--PAGE CONTENT DESKTOP-->
+                <div class="auto-bg auto-content-bg col-sm-8 hidden-xs"><div class="inner-bg content-bg"></div></div>
+                <div class="page-content entry-content col-sm-8 hidden-xs">
+                    <div class="content-inner content-bg">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="active"><a href="#home" class="btn btn-small btn-default btn-nav-tab active" role="tab" data-toggle="tab">ihr hotel</a></li>
+                          <li><a href="#profile" class="btn btn-small btn-default btn-nav-tab" role="tab" data-toggle="tab">leistungen</a></li>
+                          <li><a href="#messages" class="btn btn-small btn-default btn-nav-tab" role="tab" data-toggle="tab">termine & preise</a></li>
+                          <li>
+                            <a href="#settings" class="btn btn-small btn-holidaycheck btn-nav-tab" role="tab" data-toggle="tab">
+                                <span class="main-title">hotelbewertung</span>
+                                <span class="attribute">
+                                    <span class="title">HolidayCheck</span>
+                                    <span class="star-rating star-5">
+                                        <span class="star star-full"></span>
+                                        <span class="star star-full"></span>
+                                        <span class="star star-full"></span>
+                                        <span class="star star-full"></span>
+                                        <span class="star star-full"></span>
+                                        <span class="straight"></span>
+                                    </span>
+                                    <span class="percentage">97%</span>
+                                </span>
+                              </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane fade active in" id="home">
+                                <h2>Lage:</h2>
+                                <p>Direkt am weißen Sandstrand von Santa Susanna, in das Ortszentrum gehen Sie ca.
+                                300m, nach Barcelona sind es etwa 50km.</p>
+
+                                <h2>Hotelbeschreibung:</h2>
+                                <p>Das komplett renovierte und im Frühjahr 2013 wiedereröffnete Haus mit 128 Zimmern
+                                besticht vor allem durch seine absolut privilegierte Lage am langen Strand. Bei der
+                                Innenausstattung wurde viel Wert auf traditionelles mediterranes Ambiente und die
+                                Bedürfnisse der Urlauber gelegt. Das Konzept ist gelungen, im Hotel FERGUS Style Mar
+                                Mediterrania finden junge Erwachsene ab 16 Jahren hervorragende Rahmenbedingungen
+                                für einen perfekten Urlaub. Die großzügige Empfangshalle lädt mit einem Lounge
+                                Bereich zum Verweilen ein. Hier finden Sie die Rezeption, Lift, Internet Ecke und einige
+                                Shops. Bleiben Sie auch im Urlaub in Form und trainieren Sie in dem mit modernen
+                                Geräten ausgestatteten Fitnessstudio. Für zusätzliches Wohlbefinden wird Yoga und
+                                Pilates Unterricht mit Blick auf das Meer angeboten. Im Spa können Sie vom Alltag
+                                abschalten, während Sie sich entspannen. Das Angebot umfasst eine Trockensauna, ein
+                                Dampfbad, eine biothermische Dusche mit Chromotherapie für die Sinne sowie einen
+                                Whirlpool mit Schwanenhals und Hydromassage Strahlen. Im Außenbereich finden Sie
+                                den Swimmingpool mit Sonnendeck. Liegen und Sonnenschirme sowie ein
+                                wunderschöner Blick auf das Meer sind inklusive. Auch für das leibliche Wohl ist bestens
+                                gesorgt: Im Buffet-Restaurant genießen Sie ausgezeichnete, mediterran angehauchte
+                                Küche sowie Fisch und Fleischspezialitäten, die vom Chefkoch bei Bestellung frisch
+                                zubereitet werden. Das beste Ambiente finden Sie in der Strandbar. Bei guter Musik
+                                und Meeresrauschen schmecken die leckeren Aperitifs und Cocktails doppelt so gut.</p>
+
+                                <div class="item-action">
+                                    <p>3 Nächte mit HP ab</p>
+                                    <h1 class="price price-set">
+                                        399,-
+                                    </h1>
+                                    <a href="" class="btn btn-square btn-small btn-ersparnis">
+                                        <span class="inner">
+                                            <span class="title">ersparnis</span>
+                                            <span class="percentage">34%</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="btn btn-default more">jetzt buchen</a>
+                                </div>
+
+                            </div>
+                          <div class="tab-pane fade" id="profile">
+                            <h2>Zimmerausstattung:</h2>
+                            <p>Die eleganten Doppelzimmer sind ausgestattet mit Parkettboden, Bad/Dusche, WC,
+                            Föhn, Klimaanlage, Telefon, LCD-Sat.-TV, Safe, Minibar und Balkon oder Terrasse mit
+                            Meerblick.</p>
+
+                            <h2>Verpflegung:</h2>
+                            <p>Reichhaltiges Frühstücksbuffet. Bei Buchung von All inclusive erhalten Sie Frühstück,
+                            Mittag und Abendessen in Buffetform sowie lokale alkoholische und nicht alkoholische
+                            Getränke 11.00 - 23.00 Uhr.</p>
+
+                            <h2>Unterhaltung:</h2>
+                            <p>Am Tag leichtes Animationsprogramm. Entlang der Promenade in den Nachbarort
+                            Malgrat de Mar herrscht am Abend reges Treiben. Bars und Diskotheken sorgen für
+                            Abwechslung.</p>
+
+                            <h2>Wellness:</h2>
+                            <p>Inklusive: Nutzung des Spabereichs.
+                            Gegen Gebühr: Massagen und Schönheitsanwendungen.</p>
+
+                            <h2>Sportmöglichkeiten:</h2>
+                            <p>Inklusive: Fitnessraum.
+                            Gegen Gebühr: Fahrrad Verleih.
+                            Wassersport vom Fremdanbieter.</p>
+
+                            <h2>Reiseinfos:</h2>
+                            <p>Entfernung vom Flughafen Barcelona ca. 45 km,
+                            Transfer nicht inklusive.
+                            Der Transfer kann auf Wunsch hinzu gebucht werden.
+                            Die Touristenabgabe (ähnlich der Kurtaxe in Deutschland) in Höhe von ca. 1,25 € pro
+                            Person / Tag ist direkt im Hotel zu zahlen.</p>
+                            <div class="item-action">
+                                    <p>3 Nächte mit HP ab</p>
+                                    <h1 class="price price-set">
+                                        399,-
+                                    </h1>
+                                    <a href="" class="btn btn-square btn-small btn-ersparnis">
+                                        <span class="inner">
+                                            <span class="title">ersparnis</span>
+                                            <span class="percentage">34%</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="btn btn-default more">jetzt buchen</a>
+                                </div>
+                        </div>
+                          <div class="tab-pane fade" id="messages">text</div>
+                          <div class="tab-pane fade" id="settings">asdsd.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PAGE CONTENT MOBILE-->
+                <div class="page-collapse entry-content content-bg col-xs-12 visible-xs">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="btn btn-block btn-default" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    ihr hotel
+                                    <i class="icon icon-up pull-right"></i>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h2>Lage:</h2>
+                                    <p>Direkt am weißen Sandstrand von Santa Susanna, in das Ortszentrum gehen Sie ca.
+                                    300m, nach Barcelona sind es etwa 50km.</p>
+
+                                    <h2>Hotelbeschreibung:</h2>
+                                    <p>Das komplett renovierte und im Frühjahr 2013 wiedereröffnete Haus mit 128 Zimmern
+                                    besticht vor allem durch seine absolut privilegierte Lage am langen Strand. Bei der
+                                    Innenausstattung wurde viel Wert auf traditionelles mediterranes Ambiente und die
+                                    Bedürfnisse der Urlauber gelegt. Das Konzept ist gelungen, im Hotel FERGUS Style Mar
+                                    Mediterrania finden junge Erwachsene ab 16 Jahren hervorragende Rahmenbedingungen
+                                    für einen perfekten Urlaub. Die großzügige Empfangshalle lädt mit einem Lounge
+                                    Bereich zum Verweilen ein. Hier finden Sie die Rezeption, Lift, Internet Ecke und einige
+                                    </p>
+                                    <div class="item-action">
+                                    <p>3 Nächte mit HP ab</p>
+                                    <h1 class="price price-set">
+                                        399,-
+                                    </h1>
+                                    <a href="" class="btn btn-square btn-small btn-ersparnis">
+                                        <span class="inner">
+                                            <span class="title">ersparnis</span>
+                                            <span class="percentage">34%</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="btn btn-default more">jetzt buchen</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="btn btn-block btn-default collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    leistungen
+                                    <i class="icon icon-up pull-right"></i>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h2>Zimmerausstattung:</h2>
+                                    <p>Die eleganten Doppelzimmer sind ausgestattet mit Parkettboden, Bad/Dusche, WC,
+                                    Föhn, Klimaanlage, Telefon, LCD-Sat.-TV, Safe, Minibar und Balkon oder Terrasse mit
+                                    Meerblick.</p>
+
+                                    <h2>Verpflegung:</h2>
+                                    <p>Reichhaltiges Frühstücksbuffet. Bei Buchung von All inclusive erhalten Sie Frühstück,
+                                    Mittag und Abendessen in Buffetform sowie lokale alkoholische und nicht alkoholische
+                                    Getränke 11.00 - 23.00 Uhr.</p>
+
+                                    <h2>Unterhaltung:</h2>
+                                    <p>Am Tag leichtes Animationsprogramm. Entlang der Promenade in den Nachbarort
+                                    Malgrat de Mar herrscht am Abend reges Treiben. Bars und Diskotheken sorgen für
+                                    Abwechslung.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="btn btn-block btn-default collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    termine & preise
+                                    <i class="icon icon-up pull-right"></i>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h2>Lage:</h2>
+                                    <p>Direkt am weißen Sandstrand von Santa Susanna, in das Ortszentrum gehen Sie ca.
+                                    300m, nach Barcelona sind es etwa 50km.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="btn btn-block btn-holidaycheck collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                    <span class="main-title">hotelbewertung</span>
+                                    <span class="attribute">
+                                        <span class="title">HolidayCheck</span>
+                                        <span class="star-rating star-5">
+                                            <span class="star star-full"></span>
+                                            <span class="star star-full"></span>
+                                            <span class="star star-full"></span>
+                                            <span class="star star-full"></span>
+                                            <span class="star star-full"></span>
+                                            <span class="straight"></span>
+                                        </span>
+                                        <span class="percentage">97%</span>
+                                    </span>
+                                    <i class="icon icon-up pull-right"></i>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h2>Lage:</h2>
+                                    <p>Direkt am weißen Sandstrand von Santa Susanna, in das Ortszentrum gehen Sie ca.
+                                    300m, nach Barcelona sind es etwa 50km.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--PAGE SIDEBAR-->
+                <div class="auto-bg auto-sidebar-bg col-sm-4 col-sm-offset-8 hidden-xs sidebar-bg"></div>
+                <div class="page-sidebar col-xs-12 col-sm-4 sidebar-bg">
+                    <div class="widget widget-map">
+                        <a href="javascript:;" class="map-fancybox">
+                        	<img src="media/map.jpg" alt="">
+                        </a>
+                        <div class="widget-map-iframe" style="display:none;">
+                        	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7888.352375525596!2d115.21312644999999!3d-8.674789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1404808812672" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                        </div>
+                    </div>
+                    <div class="widget widget-text widget-bg">
+                        <h2 class="subline-set">Haben Sie noch Fragen zum angebot oder zur Buchung?</h2>
+                        <p>Unser Service- und Buchungsteam ist Ihnen telefonisch von oder per Email gerne behilflich.</p>
+                        <h1 class="widget-phone-set">0049 555 555 - 55 </h1>
+                        <p><i>Unser Service- und Buchungsteam ist Ihnen telefonisch von oder per Email gerne behilflich.</i></p>
+                        <h2 class="subline-set">Buchung@travel.partner.com</h2>
+                    </div>
+
+                    <div class="widget widget-info widget-bg">
+
+                        <h2 class="code subline-set pull-left">CODE:  3067402373</h2>
+                        <a href="" class="btn btn-square btn-storno pull-right">
+                            <span class="inner">
+                                <span class="title">storno schutz</span>
+                                <i class="icon icon-suitcase"></i>
+                            </span>
+                        </a>
+                        <div class="clearfix"></div>
+
+                        <h2 class="subline-set">stornoschutz?</h2>
+                        <p> Sie können ohne Angaben vonGründen, bei Abschluss deserweiterten Stornoschutzes, bis5 Arbeitstage vor Anreise IhreReise kostenlos stornieren.</p>
+
+                        <div class="widget-footer">
+                            <a href="#" class="btn btn-default btn-small pull-right">mehr informationen</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+
+        <!--FOOTER-->
+        <footer id="site-footer" class="site-footer row footer-bg">
+            <div class="col-xs-12 footer-inner">
+                 <nav class="footer-menu hidden-xs small-nav-set">
+                    <ul>
+                        <li><a href="#">home</a><span class="dividing">|</span></li>
+                        <li><a href="#">ueber uns</a><span class="dividing">|</span></li>
+                        <li><a href="#">profil</a><span class="dividing">|</span></li>
+                        <li><a href="#">kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- MOBILE -->
+                <nav class="footer-menu-mobile visible-xs">
+                    <a class="btn btn-icon btn-default" href="#"><i class="icon icon-phone"></i></a>
+                    <a class="btn btn-icon btn-default" href="#"><i class="icon icon-mail"></i></a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

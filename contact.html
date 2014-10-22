@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>travel | contact</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="lib/js/jQuery.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/amazingslider.js"></script>
+    <script type="text/javascript" src="lib/js/initslider-1.js"></script>
+    <script type="text/javascript" src="lib/js/fixto.min.js"></script>
+    <script type="text/javascript" src="lib/js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="lib/js/script.js"></script>
+</head>
+<body class="body-bg body-set">
+    <div class="container">
+
+		<!--HEADER-->
+        <header id="site-header" class="site-header row header-bg site-component">
+            <div class="col-xs-4 col-sm-6 left-inner">
+                <a class="site-logo" href="#"><img src="lib/img/logo.png"></a>
+            </div>
+
+            <div class="col-xs-8 col-sm-6 right-inner">
+                <nav class="languages-nav small-nav-set hidden-xs">
+                    <ul>
+                        <li><a href="#">de</a></li>
+                        <li><a href="#">en</a></li>
+                        <li><a href="#">it</a></li>
+                    </ul>
+                </nav>
+                <div class="contact hidden-xs pull-right">
+                    <img src="lib/img/profile.png">
+                    <div class="text-info">
+                        <h4 class="subline-set">buchungshotline</h4>
+                        <h4 class="subline-set" href="tel:">0049 555 555-55</h4>
+                        <h4>0049 555 555-55</h4>
+                        <h4>max. € 0,073/Min. A1-Festnetztarif</h4>
+                    </div>
+                </div>
+                <nav class="container-btn-mobile visible-xs pull-right">
+                    <a id="m-home" class="btn btn-icon btn-default" href="#"><i class="icon icon-home"></i></a>
+                    <a data-id="menu-mobile" class="btn btn-icon btn-default mobile-toggle" href="javascript:;" ><i class="icon icon-menu"></i></a>
+                    <a data-id="filter-mobile" class="btn btn-icon btn-default search mobile-toggle" href="javascript:;"><i class="icon icon-search"></i></a>
+                </nav>
+            </div>
+        </header>
+
+		<!--MENU-->
+        <nav id="site-menu" class="site-menu row nav-set">
+            <div class="col-xs-12 menu-inner menu-bg  site-component hidden-xs">
+                <ul>
+                    <li><a class="btn-icon btn-white home" href="index.html"><i class="icon icon-home"></i></a></li>
+                    <li><a href="detail.html">Detail</a></li>
+                    <li><a href="contact.html">Buchung</a></li>
+                    <li><a href="landing.html">landing</a></li>
+                    <li><a href="info.html">info</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!--MENU MOBILE-->
+            <div id="menu-mobile-content" class="col-xs-12 menu-inner-mobile mobile-toggle-content menu-bg site-component">
+                <div class="menu-mobile pull-left">
+                    <ul>
+                        <li class="home"><a href="?home">Home</a></li>
+                        <li><a href="#detail.html">reisearten</a></li>
+                        <li><a href="#landing.html">landing</a></li>
+                        <li><a href="#info.html">info</a></li>
+                        <li><a href="#">kontakt</a></li>
+                        <li><a href="#">ueber uns</a></li>
+                        <li><a href="#">reisebueros</a></li>
+                        <li><a href="#">impressum</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <nav class="languages-nav-mobile pull-right">
+                    <ul>
+                        <li><a class="btn-icon btn-white" href="#">de</a></li>
+                        <li><a class="btn-icon btn-white" href="#">en</a></li>
+                        <li><a class="btn-icon btn-white" href="#">it</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </nav>
+
+		<!--FILTER DESKTOP-->
+        <nav id="site-filter" class="site-filter nav-set row ">
+            <div class="col-xs-12 filter-inner filter-bg site-component small-nav-set hidden-xs">
+
+                <form  class="priod pull-left" method="s" name="s">
+                    <input class="search pull-left" type="text" placeholder="reisezeitraum">
+                    <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                </form>
+                <div class="container-select pull-left">
+                    <nav class="dropdown item-filter pull-left">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">Reisezeotarium</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">Reisezeotarium 0</span></li>
+                            <li><span class="text">Reisezeotarium 1</span></li>
+                            <li><span class="text">Reisezeotarium 2</span></li>
+                            <li><span class="text">Reisezeotarium 3</span></li>
+                        </ul>
+                    </nav>
+                    <nav class="dropdown item-filter pull-left">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">destination</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">destination 0</span></li>
+                            <li><span class="text">destination 1</span></li>
+                            <li><span class="text">destination 2</span></li>
+                            <li><span class="text">destination 3</span></li>
+                        </ul>
+                    </nav>
+                    <nav class="dropdown item-filter pull-left">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">sortieren nach</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">sortieren nach 0</span></li>
+                            <li><span class="text">sortieren nach 1</span></li>
+                            <li><span class="text">sortieren nach2</span></li>
+                            <li><span class="text">sortieren nach 3</span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <span class="container-suchen pull-right"><a class="btn btn-medium btn-default suchen" href="#">suchen</a></span>
+            </div>
+            <div class="clearfix"></div>
+
+            <!--FILTER MOBILE-->
+            <div id="filter-mobile-content" class="col-xs-12 filter-inner-mobile mobile-toggle-content small-nav-set filter-bg site-component">
+                <form class="priod" method="s" name="s">
+                    <input class="search pull-left" type="text" placeholder="reisezeitraum">
+                    <button class="btn-search" type="button"><i class="icon icon-calendar"></i></button>
+                    <div class="clearfix"></div>
+                </form>
+                <nav class="dropdown item-filter pull-left">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="filter-option pull-left" data-bind="label">test</span> <span class="icon icon-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                        <li><span class="text">test1</span></li>
+                        <li><span class="text">test2</span></li>
+                        <li><span class="text">test3</span></li>
+                        <li><span class="text">test4</span></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown item-filter pull-left">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="filter-option pull-left" data-bind="label">test</span> <span class="icon icon-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                        <li><span class="text">test1</span></li>
+                        <li><span class="text">test2</span></li>
+                        <li><span class="text">test3</span></li>
+                        <li><span class="text">test4</span></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown item-filter pull-left">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="filter-option pull-left" data-bind="label">test</span> <span class="icon icon-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                        <li><span class="text">test1</span></li>
+                        <li><span class="text">test2</span></li>
+                        <li><span class="text">test3</span></li>
+                        <li><span class="text">test4</span></li>
+                    </ul>
+                </nav>
+                <span class="container-suchen"><a class="btn btn-medium btn-default suchen" href="#">suchen</a></span>
+            </div>
+        </nav>
+
+
+		<!--MAIN-->
+		<div id="site-main" class="site-main row site-component">
+
+			<!--ORDER PAGE-->
+            <div class="page-order content-bg col-xs-12">
+                <div class="page-content entry-content page-bg col-xs-12">
+                    <div class="row">
+
+                        <!--FOR MOBILE VERSION-->
+                        <div class="block-order block-order-bg col-xs-12 visible-xs">
+                            <h2>ihre reise:</h2>
+                            <p><strong>Berghotel der Königsleitner***</strong></p>
+                            <p>(Objektcode SZGEULPF)</p>
+                            <p>05.06.2014 - 12.06.2014</p>
+                            <p>Teilnehmer:  2 Erwachsene</p>
+                            <p>Anreise:     Eigenanreise</p>
+                            <p><strong>Preisinformationen zur gewünschten Reise:</strong></p>
+                            <p>1 x 2-Raum Appartement 45m² für</p>
+                            <p>2-4 Personen im Haupthaus mit</p>
+                            <p>Dusche und Wc, Halbpension</p>
+                            <p><strong>Gesamtpreis ohne Versicherungen:</strong></p>
+                            <h1 class="price price-set">
+                                399,-
+                            </h1>
+                        </div>
+                        <!--END-->
+
+                        <div class="form-order col-xs-12 col-sm-7 col-md-6">
+                            <form action="">
+                                <h2>ihre anreiseart:</h2>
+                                <p>Eigenanreise</p>
+
+                                <div class="form-component">
+                                    <h2>ihre reisedaten:</h2>
+                                    <div class="form-input-icon form-column form-row">
+                                        <span class="column col-xs-12 col-sm-6 noright-xs">
+                                            <span class="form-text">Anreisedatum</span>
+                                            <input type="text" placeholder="TT.MM.JJJJ" class="input">
+                                            <a href=""><i class="icon icon-calendar"></i></a>
+                                        </span>
+                                        <span class="column col-xs-12 col-sm-6 noleft-xs">
+                                            <span class="form-text">Abreisedatum</span>
+                                            <input type="text" placeholder="TT.MM.JJJJ" class="input">
+                                            <a href=""><i class="icon icon-calendar"></i></a>
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-component">
+                                    <h2>anzahl der reisenden:</h2>
+                                    <div class="form-select form-row">
+                                        <span class="form-text-inline">Erwachsene</span>
+                                        <select class="select" name="" id=""><option value="">2</option></select>
+                                    </div>
+                                    <div class="form-input-inline form-row">
+                                        <span class="form-text-inline">Geburtsdaten Kinder:</span>
+                                        <input type="text" placeholder="TT.MM.JJJJ" class="input">
+                                        <input type="text" placeholder="TT.MM.JJJJ" class="input">
+                                        <input type="text" placeholder="TT.MM.JJJJ" class="input">
+                                    </div>
+                                </div>
+
+                                <div class="form-options form-component">
+                                    <h2>bitte wählen sie ihre unterbringung:</h2>
+                                    <div class="form-checkbox row-option">
+                                        <div class="col-xs-8 col-md-9 head-option ">
+                                            <span class="head-left block-order-bg">Zimmerart und Verpfelgung</span>
+                                        </div>
+                                        <div class="col-xs-4 col-md-3 head-option block-order-bg">
+                                            <span class="head-right block-order-bg">Gesamt in €</span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-checkbox row-option">
+                                        <div class="col-xs-8 col-md-9 option option-text">
+                                            <input class="radio" id="Buchungskunde" type="radio">
+                                            <label class="label-checkbox" for="Buchungskunde">1x 2-Raum Appartement 45m² für2-4 Personen im Haupthausmit Dusche und Wc, Halbpension</label>
+                                        </div>
+                                        <div class="col-xs-4 col-md-3 option">
+                                            <h2 class="option-price">371,00</h2>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-checkbox row-option">
+                                        <div class="col-xs-8 col-md-9 option option-text">
+                                            <input class="radio" id="Buchungskunde" type="radio">
+                                            <label class="label-checkbox" for="Buchungskunde">1x 2-Raum Appartement 45m² für2-4 Personen im Haupthausmit Dusche und Wc, Halbpension</label>
+                                        </div>
+                                        <div class="col-xs-4 col-md-3 option">
+                                            <h2 class="option-price">371,00</h2>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-checkbox row-option">
+                                        <div class="col-xs-8 col-md-9 option option-text">
+                                            <input class="radio" id="Buchungskunde" type="radio">
+                                            <label class="label-checkbox" for="Buchungskunde">1x 2-Raum Appartement 45m² für2-4 Personen im Haupthausmit Dusche und Wc, Halbpension</label>
+                                        </div>
+                                        <div class="col-xs-4 col-md-3 option">
+                                            <h2 class="option-price">371,00</h2>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-checkbox row-option">
+                                        <div class="col-xs-8 col-md-9 option option-text">
+                                            <input class="radio" id="Buchungskunde" type="radio">
+                                            <label class="label-checkbox" for="Buchungskunde">1x 2-Raum Appartement 45m² für2-4 Personen im Haupthausmit Dusche und Wc, Halbpension</label>
+                                        </div>
+                                        <div class="col-xs-4 col-md-3 option">
+                                            <h2 class="option-price">371,00</h2>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-component">
+                                    <h2>bitte geben sie die teilnehmer ein:</h2>
+                                    <div class="form-input form-block form-column block-order-bg">
+                                        <div class="block-title">Teilnehmer 1</div>
+                                        <span class="column col-xs-12 col-md-2">
+                                            <span class="form-text">Anrede*</span>
+                                            <select class="select" name="" id=""><option value="">Herr</option></select>
+                                        </span>
+                                        <span class="column col-xs-6 col-md-5 noleft-sm">
+                                            <span class="form-text">Varname</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <span class="column col-xs-6 col-md-5">
+                                            <span class="form-text">Nachname</span>
+                                            <input type="text" class="input">
+                                            </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-input form-block form-column block-order-bg">
+                                        <div class="block-title">Teilnehmer 2</div>
+                                        <span class="column col-xs-12 col-md-2">
+                                            <span class="form-text">Anrede*</span>
+                                            <select class="select" name="" id=""><option value="">Herr</option></select>
+                                        </span>
+                                        <span class="column col-xs-6 col-md-5 noleft-sm">
+                                            <span class="form-text">Varname</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <span class="column col-xs-6 col-md-5">
+                                            <span class="form-text">Nachname</span>
+                                            <input type="text" class="input">
+                                            </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-travel-insurance form-component">
+                                    <h2>bitte wählen sie die gewünschte reiseversicherung:</h2>
+                                    <div class="form-checkbox">
+                                        <input class="checkbox" id="insurance1" type="checkbox">
+                                        <label class="label-checkbox" for="insurance1">Stornoschutz, 16 EUR pro Reise</label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <input class="checkbox" id="insurance2" type="checkbox">
+                                        <label class="label-checkbox" for="insurance2">Kein Stornoschutz gewünscht</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-bio form-component">
+                                    <h2>bitte geben sie ihre rechnungsdaten ein:</h2>
+                                    <p>Die mit * gekennzeichneten Felder müssen ausgefüllt werden, da wir sonst Ihre Buchung nicht bearbeiten können.</p>
+
+                                    <div class="form-select form-column form-row">
+                                        <span class="column">
+                                            <span class="form-text">Anrede*</span>
+                                            <select class="select" name="" id=""><option value="">Herr</option></select>
+                                        </span>
+                                        <span class="column">
+                                            <span class="form-text">Titel</span>
+                                            <select class="select" name="" id=""><option value="">Bitte auswählen</option></select>
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-input form-column form-row">
+                                        <span class="column col-xs-6">
+                                            <span class="form-text">Vorname / Firma 1:*</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <span class="column col-xs-6">
+                                            <span class="form-text"> Nachname / Firma 2:*</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-input form-row">
+                                        <span class="form-text">Straße, Haus-Nr.:*</span>
+                                        <input type="text" class="input">
+                                    </div>
+
+                                    <div class="form-input form-column form-row">
+                                        <span class="column col-xs-3">
+                                            <span class="form-text">Plz:*   </span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <span class="column col-xs-9">
+                                            <span class="form-text">Ort:*</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-select form-row">
+                                        <span class="form-text">Land:*</span>
+                                        <select class="select" name="" id=""><option value="">Österreich</option></select>
+                                    </div>
+
+                                    <div class="form-input form-row">
+                                        <span class="form-text">E-Mail:*</span>
+                                        <input type="text" class="input">
+                                    </div>
+
+                                    <div class="form-input form-column form-row">
+                                        <span class="column col-xs-6">
+                                            <span class="form-text">Telefon:*</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <span class="column col-xs-6">
+                                            <span class="form-text">Telefax:*</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-textarea form-row">
+                                        <span class="form-text">Bemerkung:</span>
+                                        <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-payment form-component">
+                                    <h2>SIE DIE GEWÜNSCHTE ZAHLUNGSART AN:</h2>
+
+                                    <div class="form-select form-row">
+                                        <span class="form-text">Zahlungsart:*</span>
+                                        <select class="select" name="" id=""><option value="">Kreditkarte</option></select>
+                                        <img src="lib/img/paypal-img.png" alt="">
+                                    </div>
+
+                                    <div class="form-checkbox form-row">
+                                        <input class="checkbox" id="Buchungskunde" type="checkbox">
+                                        <label class="label-checkbox" for="Buchungskunde">Buchungskunde ist Kreditkarteninhaber</label>
+                                    </div>
+
+                                    <div class="form-input form-select form-column form-row">
+                                        <span class="column col-xs-12 col-sm-6 col-md-5">
+                                            <span class="form-text">Kreditkartengesellschaft:*</span>
+                                            <select class="select" name="" id=""><option value="">Bitte auswählen</option></select>
+                                        </span>
+                                        <span class="column col-xs-12 col-sm-6 col-md-7 noleft-xs">
+                                            <span class="form-text">Kreditkartennummer:*</span>
+                                            <input type="text" class="input">
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-select form-column form-row">
+                                        <span class="column col-xs-12 col-sm-6 col-md-5">
+                                            <span class="form-text">Gültig bis (Monat/Jahr):*</span>
+                                            <select class="select" name="" id=""><option value="">&nbsp;</option></select>
+                                            <select class="select" name="" id=""><option value="">&nbsp;</option></select>
+                                        </span>
+                                        <span class="column col-xs-12 col-sm-6 col-md-7 noleft-xs">
+                                            <span class="form-text">Prüfziffer (CVC-Code):*</span>
+                                            <input type="text" size="10" class="input">
+                                            <p class="form-note form-note-set">Wo finde ich die Prüfziffer?</p>
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-checkbox form-row">
+                                        <input class="checkbox" id="Buchungskunde" type="checkbox">
+                                        <span class="label-checkbox form-text terms-text">
+                                            Ja ich habe die allgemeinen Geschäftsbedingungen zur Kenntnis
+                                            genommen. Ich erkläre hiermit ausdrücklich, auch für
+                                            die vertraglichen Verpflichtungen aller von mir angegebenen
+                                            Teilnehmer einzustehen.
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <button class="btn btn-medium btn-default">jetzt zahlungspflichtig buchen</button>
+                            </form>
+                        </div>
+                        <div class="block-order block-order-bg fixed-content col-xs-12 col-sm-5 col-md-6 hidden-xs">
+                            <h2>ihre reise:</h2>
+                            <p><strong>Berghotel der Königsleitner***</strong></p>
+                            <p>(Objektcode SZGEULPF)</p>
+                            <p>05.06.2014 - 12.06.2014</p>
+                            <p>Teilnehmer:  2 Erwachsene</p>
+                            <p>Anreise:     Eigenanreise</p>
+                            <p><strong>Preisinformationen zur gewünschten Reise:</strong></p>
+                            <p>1 x 2-Raum Appartement 45m² für</p>
+                            <p>2-4 Personen im Haupthaus mit</p>
+                            <p>Dusche und Wc, Halbpension</p>
+                            <p><strong>Gesamtpreis ohne Versicherungen:</strong></p>
+                            <h1 class="price price-set">
+                                399,-
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="site-note site-note-set">
+                    <i class="icon icon-lock"></i>
+                    <span class="text-checkbox form-text terms-text"> Ihre Daten werden zur Sicherheit SSL-verschlüsselt übertragen.</span>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer id="site-footer" class="site-footer row footer-bg">
+            <div class="col-xs-12 footer-inner">
+                 <nav class="footer-menu hidden-xs small-nav-set">
+                    <ul>
+                        <li><a href="#">home</a><span class="dividing">|</span></li>
+                        <li><a href="#">ueber uns</a><span class="dividing">|</span></li>
+                        <li><a href="#">profil</a><span class="dividing">|</span></li>
+                        <li><a href="#">kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- MOBILE -->
+                <nav class="footer-menu-mobile visible-xs">
+                    <a class="btn btn-icon btn-default" href="#"><i class="icon icon-phone"></i></a>
+                    <a class="btn btn-icon btn-default" href="#"><i class="icon icon-mail"></i></a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
